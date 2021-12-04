@@ -13,7 +13,7 @@ var blessed = require('blessed')
 // $ wget -r -o log --tries=10 'http://artscene.textfiles.com/ansi/'
 // $ grep 'http.*\.ans$' log | awk '{ print $3 }' > ansi-art.list
 
-var urls = fs.readFileSync(__dirname + '/ansi-art.list', 'utf8').trim().split('\n');
+var urls = fs.readFileSync(__dirname + '/ansi-art.list', 'utf8').trim().split('\r\n').join('\n').split('\n');
 
 var map = urls.reduce(function(map, url) {
   map[/([^.\/]+\/[^.\/]+)\.ans$/.exec(url)[1]] = url;

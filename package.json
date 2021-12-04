@@ -44,6 +44,8 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^5.10.0"
-  }
+    "eslint": "^8.3.0",
+    "term.js": "0.0.7"
+  },
+  "dependencies": {}
 }

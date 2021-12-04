@@ -5,7 +5,7 @@
  */
 
 var fs = require('fs')
-  , util = require('util')
+  // , util = require('util')
   , path = require('path')
   , zlib = require('zlib')
   , assert = require('assert')
